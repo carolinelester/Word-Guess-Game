@@ -1,3 +1,5 @@
+document.getElementById("eyeOfTheTiger").play()
+
 var words = ["lion", "tiger", "chimpanzee", "baboon", "blackbear", "lemur", "cheetah", "camel", "zebra", "peacock", "ostrich"]
 
 var randomWord = "";
@@ -12,6 +14,7 @@ var guessesRemaining = 9;
 
 
 function Game () {
+
     randomWord = words[Math.floor(Math.random() * words.length)];
     lettersofWord = randomWord.split("");
     blanks = lettersofWord.length;
